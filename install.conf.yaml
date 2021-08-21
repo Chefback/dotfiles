@@ -9,3 +9,9 @@
     ~/.xinitrc: xinitrc
 
 
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: gitconfig
+
+
