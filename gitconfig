@@ -1,3 +1,7 @@
 [user]
 	name = Chefback
 	email = chefbacksw@gmail.com
+[http]
+	proxy = http://127.0.0.1:12333
+[https]
+	proxy = http://127.0.0.1:12333
