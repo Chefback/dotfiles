@@ -115,6 +115,7 @@ Plug 'scrooloose/nerdcommenter' " in <space>cc to comment a line
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'kana/vim-textobj-user'
 Plug 'fadein/vim-FIGlet'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 noremap J 5j
 noremap K 5k
@@ -132,3 +133,9 @@ let g:fzf_history_dir = 1
 
 " Coc auto installation after initialization
 let g:coc_global_extensions = ['coc-json','coc-vimlsp']
+
+" nerdtree shortcut
+nnoremap tt :NERDTree<CR>
+" airline use nerdfont
+let g:airline_powerline_fonts = 1
+
