@@ -48,7 +48,7 @@ map tn :+tabnext<CR>
 map sv <C-w>t<C-w>H
 map sh <C-w>t<C-w>K
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'
@@ -103,6 +103,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'kshenoy/vim-signature'
 
 " Other useful utilities
+Plug 'mhinz/vim-startify'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/goyo.vim' " distraction free writing mode
 Plug 'machakann/vim-sandwich' " better version of vim-surround type ysks' to wrap the word with '' or type cs'` to change 'word' to `word`
