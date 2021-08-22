@@ -9,3 +9,5 @@
 	defaultBranch = master
 [color]
 	ui = auto
+[credential]
+	helper = cache
