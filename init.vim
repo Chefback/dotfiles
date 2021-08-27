@@ -3,8 +3,6 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
 :tnoremap <Esc> <C-\><C-n>
-set backup
-
 
 let mapleader=" "
 syntax on
@@ -105,6 +103,7 @@ Plug 'kshenoy/vim-signature'
 " Other useful utilities
 Plug 'mhinz/vim-startify'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'junegunn/goyo.vim' " distraction free writing mode
 Plug 'machakann/vim-sandwich' " better version of vim-surround type ysks' to wrap the word with '' or type cs'` to change 'word' to `word`
 Plug 'godlygeek/tabular' " type ;Tabularize /= to align the =

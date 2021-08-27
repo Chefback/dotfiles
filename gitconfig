@@ -6,7 +6,6 @@
 [https]
 	proxy = http://127.0.0.1:12333
 [init]
-	defaultBranch = master
 	defualtBranch = main
 [color]
 	ui = auto

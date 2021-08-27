@@ -72,6 +72,9 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+# zsh vi-mode
+plugins+=(zsh-vi-mode)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
