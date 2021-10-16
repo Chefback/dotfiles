@@ -129,4 +129,4 @@ alias paci="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sud
 alias pacu="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
 alias pacid="pacman -Slq | fzf --multi --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S"
 # Sourcing alias
-alias zsh="source $ZSH/oh-my-zsh.sh"
+alias zsh="source .zshrc"
