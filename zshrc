@@ -115,7 +115,18 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias c="clear"
 alias vim="nvim"
+alias vi="nvim"
 #DISPLAY=192.168.123.211:0.0
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Fzf initialization
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+# Fzf alias
+alias paci="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
+alias pacu="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
+alias pacid="pacman -Slq | fzf --multi --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S"
+# Sourcing alias
+alias zsh="source $ZSH/oh-my-zsh.sh"
